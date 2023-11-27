@@ -29,7 +29,7 @@ with st.form("My form"):
 
     academicStanding = st.selectbox("What is your academic standing?",
                                     index=None,
-                                    options=("Freshman", "Sophomore", "Junior", "Senior", "Graduate"))
+                                    options=["Freshman", "Sophomore", "Junior", "Senior", "Graduate"])
 
     majorOptions = ["Computer Science BA", "Computer Science BS", "Computer Science MS", "Computer Science PhD",
                     "Cybersecurity BA", "Cybersecurity BS", "IoT", "Computer Engineering", "Electrical Engineering",
@@ -43,10 +43,10 @@ with st.form("My form"):
                          index=None)
 
     shirt = st.selectbox("What is your shirt size?",
-                         options=("S", "M", "L", "XL", "XXL"), index=None)
+                         options=["S", "M", "L", "XL", "XXL"], index=None)
 
     diet = st.multiselect("Any dietary restrictions?",
-                          options=("No", "Vegan", "Vegetarian", "Gluten Allergy", "Lactose Intolerance"))
+                          options=["No", "Vegan", "Vegetarian", "Gluten Allergy", "Lactose Intolerance"])
 
     consent = st.checkbox("I consent to the use of my likeness in media publications, for WiTCON and third parties, "
                           "on print and social media for the purpose of promotion and awareness."
