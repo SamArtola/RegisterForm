@@ -1,8 +1,7 @@
 import base64
 import streamlit as st
 import requests
-import pandas as pd
-from pyairtable import Api
+
 
 st.title("WiTCON 2024 Registration")
 st.image("media/WiTCONLogo.png")
@@ -17,9 +16,6 @@ headers = {
     'Authorization': f'Bearer {AIRTABLE_PERSONAL_TOKEN}',
     'Content-Type': 'application/json',
 }
-
-api = Api(AIRTABLE_PERSONAL_TOKEN)
-table = api.table(AIRTABLE_BASE_ID, AIRTABLE_TABLE_NAME)
 
 with st.form("My form"):
     firstName = st.text_input("Enter your first name:")
