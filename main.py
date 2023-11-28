@@ -96,7 +96,7 @@ if submitted:
         temp = ""
         for i in diet:
             temp += i
-        form_entry['fields']['Diet'] = temp
+        form_entry['fields']['Diet'] = diet
         if resume is not None:
             file_content = resume.read()
             file_content_base64 = base64.b64encode(file_content).decode('utf-8')
