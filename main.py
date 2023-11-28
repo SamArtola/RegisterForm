@@ -66,7 +66,7 @@ shirt = st.selectbox("What is your shirt size?",
 
 diet = st.multiselect("Any dietary restrictions?",
                           options=["No", "Vegan", "Vegetarian", "Gluten Allergy", "Lactose Intolerance"])
-
+st.text(diet)
 consent = st.checkbox("I consent to the use of my likeness in media publications, for WiTCON and third parties, "
                           "on print and social media for the purpose of promotion and awareness."
                           )
