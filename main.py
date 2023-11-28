@@ -8,8 +8,8 @@ st.image("media/WiTCONLogo.png")
 st.header("Registration Form")
 
 AIRTABLE_PERSONAL_TOKEN = st.secrets["AIRTABLE_PERSONAL_TOKEN"]
-AIRTABLE_BASE_ID = "appV4sA3sAl1l8icn"
-AIRTABLE_TABLE_NAME = "tblAeVid7nYaMmShC"
+AIRTABLE_BASE_ID = st.secrets["AIRTABLE_PERSONAL_TOKEN"]
+AIRTABLE_TABLE_NAME = st.secrets["AIRTABLE_PERSONAL_TOKEN"]
 AIRTABLE_API_URL = f'https://api.airtable.com/v0/{AIRTABLE_BASE_ID}/{AIRTABLE_TABLE_NAME}'
 
 headers = {
